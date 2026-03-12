@@ -1,0 +1,5 @@
+{
+  "name": "Mobile Phone Simulator",
+  "description": "A React-based simulator where you create an NBA player, get drafted, play through seasons, win awards, and build a legendary career. Features AI-powered game summaries via the Gemini API.",
+  "requestFramePermissions": []
+}

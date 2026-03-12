@@ -1,0 +1,386 @@
+
+{
+  "rookieSensation": "Rookie Sensation",
+  "didNotMakePlayoffs": "The {{teamName}} didn't make the playoffs. Better luck next year!",
+  "appTitle": "NBA Career Simulator",
+  "appSubtitle": "Craft your legacy. Become a legend.",
+  "generateWithAI": "Generate with AI",
+  "generatingBio": "Generating...",
+  "basicInfo": "Basic Information",
+  "playerName": "Player Name",
+  "playerNamePlaceholder": "e.g., Michael Jordan",
+  "position": "Position",
+  "playerBio": "Player Biography",
+  "playerBioDescription": "This will be used by the AI to generate a unique story for your player.",
+  "playerBioPlaceholder": "Describe your player's backstory, personality, and motivations. e.g., 'A quiet kid from a small town with a chip on his shoulder, known for his relentless work ethic and calm demeanor under pressure.' The more detail, the more unique your career will be.",
+  "positions": {
+    "PG": "PG - Point Guard",
+    "SG": "SG - Shooting Guard",
+    "SF": "SF - Small Forward",
+    "PF": "PF - Power Forward",
+    "C": "C - Center"
+  },
+  "playerTraits": "Player Traits",
+  "clutchTrait": "Clutch Gene",
+  "clutchTraitDescription": "Perform better in high-pressure situations. Costs 5 attribute points.",
+  "clutchBadge": "Clutch",
+  "quickBuilds": "Quick Builds",
+  "builds": {
+    "shooter": "Shooter", "slasher": "Slasher", "lockdown_defender": "Defender", "playmaker": "Playmaker",
+    "glass_cleaner": "Rebounder", "two_way": "Two-Way", "stretch_big": "Stretch Big", 
+    "athletic_freak": "Athletic", "all_around": "All-Around", "post_scorer": "Post Scorer"
+  },
+  "attributes": "Attributes",
+  "attributesList": {
+    "shooting": "Shooting", "midrange": "Mid-Range", "threepoint": "3-Point", "finishing": "Finishing",
+    "defense": "Defense", "perimeter_d": "Perimeter D", "athleticism": "Athleticism", "speed": "Speed",
+    "playmaking": "Playmaking", "ball_handle": "Ball Handle", "rebounding": "Rebounding", "strength": "Strength"
+  },
+  "pointsRemaining": "Points Remaining",
+  "createButton": "Start My Career",
+  "createButtonDisabled": "Distribute {{points}} more points",
+  "createButtonDisabledTooMany": "Remove {{points}} points",
+  "draft": {
+    "title": "NBA Draft Night",
+    "deciding": "Your future is being decided...",
+    "newChapter": "A new chapter begins!",
+    "selectedBy": "With the following selection, the {{teamName}} select...",
+    "startCareerButton": "Start My Career",
+    "round": "Round",
+    "pick": "Pick",
+    "overallPick": "Overall Pick"
+  },
+  "preDraft": {
+    "title": "Pre-Draft Process",
+    "makeChoice": "Complete the showcase games and media interviews to improve your draft projection.",
+    "draftStock": "Projected Draft Position",
+    "goToDraftButton": "Go to Draft Night",
+    "skipToDraft": "Skip Pre-Draft Process",
+    "gamesTitle": "College Showcase",
+    "gamesDesc": "Play 3 games to prove your skills.",
+    "interviewTitle": "Media Interviews",
+    "interviewDesc": "Answer tough questions from the press.",
+    "completed": "Completed!",
+    "showcaseGame": "Showcase Game {{num}}",
+    "opponent1": "Top Prospect University",
+    "opponent2": "State Champions",
+    "opponent3": "Rival College",
+    "returnToHub": "Return to Hub",
+    "generatingQuestions": "Generating interview questions...",
+    "question": "Question {{num}} of {{total}}",
+    "simulateGame": "Simulate Game {{num}}",
+    "simulating": "Simulating...",
+    "nextGame": "Next Game",
+    "yourTeam": "Your Team",
+    "quarter": "Q{{num}}",
+    "final": "Final"
+  },
+  "projectedPick": {
+    "top5": "Top 5 Pick",
+    "lottery": "Lottery Pick (5-14)",
+    "firstRound": "Late 1st Round (15-30)",
+    "secondRound": "2nd Round Pick",
+    "undrafted": "Late 2nd / Undrafted"
+  },
+  "eventLoading": {
+    "title": "Pivotal Moment",
+    "description": "A key event in your career is unfolding..."
+  },
+  "eventModal": {
+    "decisionMade": "Decision Made"
+  },
+  "toggleEvents": "Narrative Events",
+  "season": "Season",
+  "dashboard": {
+    "upcomingGames": "Upcoming Games",
+    "seasonOver": "Regular season is over.",
+    "conferenceStandings": "Conference Standings"
+  },
+  "overall": "Overall",
+  "momentum": "Momentum",
+  "chemistry": {
+    "title": "Team Chemistry",
+    "excellent": "Excellent",
+    "high": "High",
+    "neutral": "Neutral",
+    "low": "Low",
+    "veryLow": "Very Low"
+  },
+  "seasonAverages": "Season Averages",
+  "teammates": "Teammates",
+  "seasonProgress": "Season Progress",
+  "gamesPlayed": "Games Played",
+  "actions": "Actions",
+  "playNextGame": "Play Next Game",
+  "finishSeason": "Finish Regular Season",
+  "skip5": "Skip 5",
+  "skip10": "Skip 10",
+  "toPlayoffs": "To Playoffs",
+  "recentGames": "Recent Games",
+  "recentPerformance": "Recent Performance",
+  "mediaBuzz": "Media Buzz",
+  "noNews": "The wire is quiet for now...",
+  "noGamesPlayed": "No games played yet.",
+  "noAchievements": "No achievements yet.",
+  "vs": "vs",
+  "victory": "VICTORY!",
+  "defeat": "DEFEAT",
+  "points": "Points",
+  "rebounds": "Rebounds",
+  "assists": "Assists",
+  "loadingSummary": "Loading summary...",
+  "continue": "Continue",
+  "winsSeries": "{{teamCode}} wins series {{wins1}}-{{wins2}}",
+  "settingsModal": {
+    "title": "Settings",
+    "language": "Language",
+    "apiKeyTitle": "Gemini API Key",
+    "apiKeyDescription": "By default, this app uses a shared API key that has rate limits. To use your own Google AI API key for unlimited use, paste it below. Your key will be saved in your browser.",
+    "inputPlaceholder": "Enter your API key here",
+    "getYourKey": "Get your own key at Google AI Studio",
+    "saveButton": "Save Key",
+    "removeButton": "Remove Key",
+    "closeButton": "Close"
+  },
+  "notifications": {
+    "chemistry": {
+        "improving": {
+            "title": "Chemistry Improving",
+            "description": "The team dynamic is feeling strong! Current chemistry: {{value}}."
+        },
+        "worsening": {
+            "title": "Chemistry Worsening",
+            "description": "Tension is building in the locker room. Current chemistry: {{value}}."
+        }
+    },
+    "traitGained": {
+        "title": "Trait Gained!",
+        "description": "You've earned the '{{traitName}}' trait through your actions!"
+    }
+  },
+  "phone": {
+    "title": "My Phone",
+    "home": "Home",
+    "apps": {
+      "social": "Social",
+      "news": "News",
+      "contacts": "Contacts",
+      "dating": "Dating"
+    },
+    "social": {
+      "title": "HoopsNet",
+      "feed": "Feed",
+      "noTweets": "Your feed is empty. Play a game to see what people are saying!",
+      "loading": "Loading new tweets..."
+    },
+    "contacts": {
+      "title": "Contacts",
+      "noContacts": "No contacts yet."
+    },
+    "dating": {
+      "title": "HypeCourt",
+      "comingSoon": "Coming Soon"
+    }
+  },
+  "playoffs": {
+    "title": "NBA Playoffs",
+    "nbaChampion": "NBA Champion",
+    "showBracket": "Show Bracket",
+    "hideBracket": "Hide Bracket",
+    "liveScoreToggle": "Live Score",
+    "eventsToggle": "Narrative Events",
+    "loadingOpponent": "Loading next opponent...",
+    "champion": "🏆 NBA CHAMPION! 🏆",
+    "wonChampionship": "You have won the NBA Championship!",
+    "seriesWon": "Series Won! Advancing...",
+    "eliminated": "Eliminated from the Playoffs.",
+    "enterOffSeason": "Enter Off-Season",
+    "nextRound": "Next Round",
+    "simulating": "Simulating...",
+    "playGame": "Play Game {{gameNum}}",
+    "challenge": "The {{teamName}} stand in your way. It's time to choose your game plan.",
+    "waitingForOpponent": "Waiting for opponent...",
+    "seriesComplete": "Their series is still being decided.",
+    "simulationSpeed": "Simulation Speed",
+    "scouting": {
+        "title": "Scouting Report",
+        "dominant_big": "This team runs its offense through a dominant post presence. They are tough inside but can be slow to defend the perimeter.",
+        "offensive_juggernaut": "An offensive powerhouse with multiple scoring threats. They play fast and can put up points in a hurry.",
+        "defensive_lockdown": "A gritty, defensive-minded team that will make you work for every point. They thrive on low-scoring affairs.",
+        "pace_and_space": "This team loves to run and shoot threes. They spread the floor with shooters and attack relentlessly in transition."
+    },
+    "strategyResult": {
+      "title": "Strategy Outcome",
+      "strategy": "Strategy",
+      "successChance": "Success Chance",
+      "outcome": "Outcome",
+      "success": "SUCCESS",
+      "failure": "FAILURE",
+      "dismiss": "Dismiss",
+      "onSuccess": "On Success",
+      "onFailure": "On Failure"
+    }
+  },
+  "playoffRounds": {
+    "first": "First Round",
+    "semis": "Conference Semifinals",
+    "finals": "Conference Finals",
+    "nbaFinals": "NBA Finals"
+  },
+  "playoffChoice": {
+    "title": "Game Plan",
+    "subtitle": "How will you approach this crucial playoff game?",
+    "keyStats": "Key Stats",
+    "risk": {
+        "low": "Low Risk",
+        "medium": "Medium Risk",
+        "high": "High Risk"
+    }
+  },
+  "strategyEffects": {
+    "playerPoints": "Your Scoring",
+    "playerRebounds": "Your Rebounding",
+    "playerAssists": "Your Playmaking",
+    "teamOffense": "Team Offense",
+    "teamDefense": "Team Defense",
+    "opponentOffense": "Opponent Offense",
+    "opponentDefense": "Opponent Defense",
+    "none": "No major effect"
+  },
+  "playoffStrategies": {
+    "categories": {
+      "offensive": "Offensive",
+      "defensive": "Defensive",
+      "team": "Team"
+    },
+    "iso_hero_ball": { "name": "Hero Ball", "description": "Isolate your matchup and take over the scoring. High risk, high reward." },
+    "three_point_barrage": { "name": "3-Point Barrage", "description": "Hunt for open shots from beyond the arc. Live and die by the three." },
+    "fastbreak_frenzy": { "name": "Fastbreak Frenzy", "description": "Push the pace relentlessly. Look to score in transition before the defense can get set." },
+    "pick_and_roll_mastery": { "name": "Pick & Roll Mastery", "description": "Run the pick and roll to create shots for yourself or teammates." },
+    "attack_the_paint": { "name": "Attack the Paint", "description": "Be aggressive and drive to the basket, trying to draw fouls or score at the rim." },
+    "mid_range_clinic": { "name": "Mid-Range Clinic", "description": "Exploit the defense by focusing on high-percentage mid-range jumpers." },
+    "patient_offense": { "name": "Patient Offense", "description": "Move the ball and wait for the best possible shot to open up." },
+    "post_up_bully": { "name": "Post-Up Bully", "description": "Use your size and strength to back down defenders in the post for easy looks." },
+    "unleash_creative_playmaking": { "name": "Unleash Creativity", "description": "Improvise and make flashy plays to catch the defense off guard." },
+    "full_court_press": { "name": "Full Court Press", "description": "Apply pressure the entire length of the court to force turnovers." },
+    "pack_the_paint": { "name": "Pack the Paint", "description": "Collapse the defense to prevent inside scoring, but risk leaving shooters open." },
+    "run_shooters_off_line": { "name": "Run Shooters Off the Line", "description": "Aggressively close out on perimeter players to prevent 3-point attempts." },
+    "force_tough_midrange": { "name": "Force Tough Mid-Range", "description": "A conservative scheme designed to prevent layups and open threes." },
+    "lock_down_star_player": { "name": "Lock Down Star Player", "description": "Focus your best defender on stopping the opponent's main threat." },
+    "switch_everything": { "name": "Switch Everything", "description": "Switch all screens to disrupt offensive flow, but risk creating mismatches." },
+    "trap_the_ball_handler": { "name": "Trap the Ball Handler", "description": "Send a double-team at the primary ball handler to force a mistake." },
+    "physical_defense": { "name": "Physical Defense", "description": "Use your strength to be disruptive, but risk getting into foul trouble." },
+    "secure_defensive_rebounds": { "name": "Secure Defensive Rebounds", "description": "Prioritize ending defensive possessions by boxing out and grabbing boards." },
+    "enforce_the_paint": { "name": "Enforce the Paint", "description": "Establish a physical presence inside, deterring drives and contesting shots." },
+    "slow_the_pace": { "name": "Slow the Pace", "description": "Grind the game to a halt, limiting possessions for both teams." },
+    "push_the_pace": { "name": "Push the Pace", "description": "Speed up the game, creating more possessions and a chaotic environment." },
+    "veteran_leadership": { "name": "Veteran Leadership", "description": "Lean on experienced players to make smart plays and calm the team." },
+    "small_ball_lineup": { "name": "Go Small", "description": "Play a smaller, faster lineup to emphasize speed and shooting." },
+    "big_ball_lineup": { "name": "Go Big", "description": "Play a larger, stronger lineup to dominate the paint and rebounding." },
+    "focus_on_ball_movement": { "name": "Focus on Ball Movement", "description": "Emphasize passing and teamwork to generate open looks for everyone." },
+    "crash_offensive_glass": { "name": "Crash the Offensive Glass", "description": "Send players to get offensive rebounds for second-chance points." },
+    "coachs_pep_talk": { "name": "Coach's Pep Talk", "description": "A well-timed timeout to regroup and motivate the team." },
+    "fan_favorite_play": { "name": "Run a Highlight Play", "description": "Attempt a high-flying play to energize the team and the home crowd." },
+    "trash_talk_opponent": { "name": "Trash Talk", "description": "Get in the opponent's head to try and throw them off their game." },
+    "study_film_and_exploit": { "name": "Study Film & Exploit", "description": "Use your preparation to attack a specific weakness in the opponent's scheme." },
+    "rally_the_team": { "name": "Rally the Team", "description": "Take on a leadership role, directing teammates and boosting morale." }
+  },
+  "awardsCeremony": {
+    "title": "Season Awards Ceremony",
+    "subtitle": "Your incredible performance this season has been recognized by the league.",
+    "continueButton": "Continue to Post-Season",
+    "noAwardsTitle": "Regular Season Over",
+    "noAwardsSubtitle": "The 82-game season has concluded. It's time for the post-season.",
+    "noAwardsBody": "You didn't win any major league awards this season. Time to prove them wrong in the playoffs!"
+  },
+  "coachReport": {
+    "title": "End of Season Report",
+    "subtitle": "A word from the coach...",
+    "loading": "Coach is analyzing your season...",
+    "proceedButton": "Proceed to Off-Season Training"
+  },
+  "offSeasonTraining": {
+    "title": "Off-Season Training",
+    "subtitle": "Time to hit the gym based on your coach's feedback.",
+    "coachFocus": "Coach's Focus",
+    "trainButton": "Start Training",
+    "trainingInProgress": "Training in progress...",
+    "resultsTitle": "Training Results",
+    "statImproved": "{{attribute}} improved by +{{points}}!",
+    "noImprovement": "Tough session. No significant improvements this time.",
+    "proceedButton": "Proceed to Free Agency"
+  },
+  "freeAgency": {
+    "title": "Off-Season: Free Agency",
+    "subtitle": "Your contract is up. Where will you sign for Season {{season}}?",
+    "currentTeam": "(Current Team)",
+    "newOffer": "New Offer",
+    "signing": "Signing with the {{teamName}}..."
+  },
+  "retirementPrompt": {
+    "title": "A Big Decision",
+    "description": "You've just completed your {{season}}th season in the NBA. You have the option to retire now and solidify your legacy, or return for another year to chase greatness. What's your call?",
+    "retireButton": "Hang Up My Sneakers",
+    "continueButton": "One More Season"
+  },
+  "retirement": {
+    "title": "A Legendary Career",
+    "seasonsInNBA": "{{count}} Seasons in the NBA",
+    "careerTotals": "Career Totals",
+    "championships": "Championships",
+    "trophyCase": "Trophy Case",
+    "noAwards": "No major individual awards won.",
+    "legacy": "Legacy",
+    "solidCareer": "A solid career in the books.",
+    "newCareerButton": "Start a New Career"
+  },
+  "standings": {
+    "title": "League Standings",
+    "east": "Eastern Conference",
+    "west": "Western Conference",
+    "team": "Team",
+    "wins": "W",
+    "losses": "L",
+    "winPct": "PCT"
+  },
+  "trophyGallery": {
+    "title": "Trophy Gallery",
+    "backButton": "Back to Dashboard",
+    "championships": "NBA Championships ({{count}})",
+    "noChampionships": "No championships won... yet.",
+    "individualAwards": "Individual Awards",
+    "season": "Season",
+    "fmvpName": "Finals MVP"
+  },
+  "trophies": {
+    "mvp": { "name": "MVP", "description": "Most Valuable Player of the Season" },
+    "fmvp": { "name": "Finals MVP", "description": "Most Valuable Player of the Finals" },
+    "scoring-champ": { "name": "Scoring Champ", "description": "Led the league in scoring" },
+    "all-star": { "name": "All-Star", "description": "Selected for the All-Star Game" },
+    "all-nba": { "name": "All-NBA Team", "description": "Selected to an All-NBA Team" },
+    "rookie-year": { "name": "Rookie of the Year", "description": "Voted best rookie of the season" },
+    "dpoy": { "name": "Defensive Player of the Year", "description": "Voted best defender of the season" },
+    "sixth-man": { "name": "Sixth Man of the Year", "description": "Voted best reserve of the season" },
+    "most-improved": { "name": "Most Improved Player", "description": "Showed the most progress from the previous season" }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "first-game": { "name": "NBA Debut", "description": "Played your first NBA game" },
+    "first-points": { "name": "First Points", "description": "Scored your first NBA points" },
+    "double-double": { "name": "Double-Double", "description": "Achieved a double-double in a game" },
+    "30-points": { "name": "30-Point Game", "description": "Scored 30 points in a game" },
+    "drafted": { "name": "Drafted!", "description": "Selected in the NBA draft" },
+    "lottery-pick": { "name": "Lottery Pick!", "description": "Selected in the top 14 picks of the draft" },
+    "playoff-berth": { "name": "Made the Playoffs", "description": "Your team qualified for the playoffs" },
+    "playoff-win": { "name": "Playoff Victory", "description": "Won your first playoff game" },
+    "series-win": { "name": "Won a Series", "description": "Won a playoff series" },
+    "conference-finals": { "name": "Conference Finals", "description": "Reached the conference finals" },
+    "nba-finals": { "name": "NBA Finals", "description": "Reached the NBA Finals" },
+    "champion": { "name": "NBA Champion", "description": "Won the NBA championship" },
+    "triple-double": { "name": "Triple-Double", "description": "Achieved a triple-double in a game" },
+    "50-point-game": { "name": "50-Point Game", "description": "Scored 50 or more points in a game" },
+    "jersey-retired": { "name": "Jersey Retired", "description": "Had your jersey retired by a team" },
+    "hall-of-fame": { "name": "Hall of Fame", "description": "Inducted into the Basketball Hall of Fame" },
+    "legend": { "name": "Legend of the Game", "description": "Played for more than 15 seasons in the NBA" }
+  }
+}

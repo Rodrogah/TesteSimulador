@@ -1,0 +1,386 @@
+
+{
+  "rookieSensation": "Calouro Sensação",
+  "didNotMakePlayoffs": "O {{teamName}} não se classificou para os playoffs. Mais sorte no próximo ano!",
+  "appTitle": "Simulador de Carreira da NBA",
+  "appSubtitle": "Crie seu legado. Torne-se uma lenda.",
+  "generateWithAI": "Gerar com IA",
+  "generatingBio": "Gerando...",
+  "basicInfo": "Informações Básicas",
+  "playerName": "Nome do Jogador",
+  "playerNamePlaceholder": "Ex: LeBron James",
+  "position": "Posição",
+  "playerBio": "Biografia do Jogador",
+  "playerBioDescription": "Isso será usado pela IA para gerar uma história única para o seu jogador.",
+  "playerBioPlaceholder": "Descreva a história, personalidade e motivações do seu jogador. Ex: 'Um garoto quieto de uma cidade pequena, sempre com algo a provar, conhecido por sua ética de trabalho incansável e calma sob pressão.' Quanto mais detalhes, mais única será sua carreira.",
+  "positions": {
+    "PG": "PG - Armador",
+    "SG": "SG - Ala-Armador",
+    "SF": "SF - Ala",
+    "PF": "PF - Ala-Pivô",
+    "C": "C - Pivô"
+  },
+  "playerTraits": "Características do Jogador",
+  "clutchTrait": "Gene Clutch",
+  "clutchTraitDescription": "Desempenho melhor em situações de alta pressão. Custa 5 pontos de atributo.",
+  "clutchBadge": "Clutch",
+  "quickBuilds": "Builds Rápidas",
+  "builds": {
+    "shooter": "Arremessador", "slasher": "Infiltrador", "lockdown_defender": "Defensor", "playmaker": "Armador",
+    "glass_cleaner": "Reboteiro", "two_way": "Two-Way", "stretch_big": "Stretch Big", 
+    "athletic_freak": "Atlético", "all_around": "Completo", "post_scorer": "Post Scorer"
+  },
+  "attributes": "Atributos",
+  "attributesList": {
+    "shooting": "Arremesso", "midrange": "Meia Distância", "threepoint": "3 Pontos", "finishing": "Finalização",
+    "defense": "Defesa", "perimeter_d": "Def. de Perímetro", "athleticism": "Atleticismo", "speed": "Velocidade",
+    "playmaking": "Criação", "ball_handle": "Drible", "rebounding": "Rebote", "strength": "Força"
+  },
+  "pointsRemaining": "Pontos Restantes",
+  "createButton": "Começar Minha Carreira",
+  "createButtonDisabled": "Distribua mais {{points}} pontos",
+  "createButtonDisabledTooMany": "Remova {{points}} pontos",
+  "draft": {
+    "title": "Noite do Draft da NBA",
+    "deciding": "Seu futuro está sendo decidido...",
+    "newChapter": "Um novo capítulo começa!",
+    "selectedBy": "Com a seguinte escolha, o {{teamName}} seleciona...",
+    "startCareerButton": "Começar Minha Carreira",
+    "round": "Rodada",
+    "pick": "Escolha",
+    "overallPick": "Escolha Geral"
+  },
+  "preDraft": {
+    "title": "Processo Pré-Draft",
+    "makeChoice": "Complete os jogos de exibição e as entrevistas para melhorar sua projeção no draft.",
+    "draftStock": "Posição Projetada no Draft",
+    "goToDraftButton": "Ir para a Noite do Draft",
+    "skipToDraft": "Pular Processo Pré-Draft",
+    "gamesTitle": "Exibição Universitária",
+    "gamesDesc": "Jogue 3 partidas para provar seu talento.",
+    "interviewTitle": "Entrevistas com a Mídia",
+    "interviewDesc": "Responda perguntas difíceis da imprensa.",
+    "completed": "Concluído!",
+    "showcaseGame": "Jogo de Exibição {{num}}",
+    "opponent1": "Universidade dos Prospectos",
+    "opponent2": "Campeões Estaduais",
+    "opponent3": "Faculdade Rival",
+    "returnToHub": "Voltar ao Início",
+    "generatingQuestions": "Gerando perguntas da entrevista...",
+    "question": "Pergunta {{num}} de {{total}}",
+    "simulateGame": "Simular Jogo {{num}}",
+    "simulating": "Simulando...",
+    "nextGame": "Próximo Jogo",
+    "yourTeam": "Seu Time",
+    "quarter": "{{num}}º Q",
+    "final": "Final"
+  },
+  "projectedPick": {
+    "top5": "Escolha Top 5",
+    "lottery": "Escolha de Loteria (5-14)",
+    "firstRound": "Final do 1º Round (15-30)",
+    "secondRound": "Escolha de 2º Round",
+    "undrafted": "Final do 2º Round / Não Draftado"
+  },
+  "eventLoading": {
+    "title": "Momento Decisivo",
+    "description": "Um evento chave em sua carreira está se desenrolando..."
+  },
+  "eventModal": {
+    "decisionMade": "Decisão Tomada"
+  },
+  "toggleEvents": "Eventos Narrativos",
+  "season": "Temporada",
+  "dashboard": {
+    "upcomingGames": "Próximos Jogos",
+    "seasonOver": "A temporada regular acabou.",
+    "conferenceStandings": "Classificação da Conferência"
+  },
+  "overall": "Overall",
+  "momentum": "Momento",
+  "chemistry": {
+    "title": "Química do Time",
+    "excellent": "Excelente",
+    "high": "Alta",
+    "neutral": "Neutra",
+    "low": "Baixa",
+    "veryLow": "Muito Baixa"
+  },
+  "seasonAverages": "Médias da Temporada",
+  "teammates": "Companheiros",
+  "seasonProgress": "Progresso da Temporada",
+  "gamesPlayed": "Jogos Disputados",
+  "actions": "Ações",
+  "playNextGame": "Jogar Próxima Partida",
+  "finishSeason": "Finalizar Temporada Regular",
+  "skip5": "Pular 5",
+  "skip10": "Pular 10",
+  "toPlayoffs": "Para Playoffs",
+  "recentGames": "Jogos Recentes",
+  "recentPerformance": "Desempenho Recente",
+  "mediaBuzz": "Notícias da Mídia",
+  "noNews": "Nenhuma notícia por enquanto...",
+  "noGamesPlayed": "Nenhum jogo disputado ainda.",
+  "noAchievements": "Nenhuma conquista ainda.",
+  "vs": "vs",
+  "victory": "VITÓRIA!",
+  "defeat": "DERROTA",
+  "points": "Pontos",
+  "rebounds": "Rebotes",
+  "assists": "Assistências",
+  "loadingSummary": "Carregando resumo...",
+  "continue": "Continuar",
+  "winsSeries": "{{teamCode}} ganhou a série {{wins1}}-{{wins2}}",
+  "settingsModal": {
+    "title": "Configurações",
+    "language": "Idioma",
+    "apiKeyTitle": "Chave de API Gemini",
+    "apiKeyDescription": "Por padrão, este app usa uma chave de API compartilhada com limites de uso. Para usar sua própria chave de API do Google AI para uso ilimitado, cole-a abaixo. Sua chave será salva no seu navegador.",
+    "inputPlaceholder": "Insira sua chave de API aqui",
+    "getYourKey": "Obtenha sua chave no Google AI Studio",
+    "saveButton": "Salvar Chave",
+    "removeButton": "Remover Chave",
+    "closeButton": "Fechar"
+  },
+  "notifications": {
+    "chemistry": {
+      "improving": {
+        "title": "Química Melhorando",
+        "description": "A dinâmica do time está forte! Química atual: {{value}}."
+      },
+      "worsening": {
+        "title": "Química Piorando",
+        "description": "A tensão está crescendo no vestiário. Química atual: {{value}}."
+      }
+    },
+    "traitGained": {
+      "title": "Característica Adquirida!",
+      "description": "Você ganhou a característica '{{traitName}}' através de suas ações!"
+    }
+  },
+  "phone": {
+    "title": "Meu Celular",
+    "home": "Início",
+    "apps": {
+      "social": "Social",
+      "news": "Notícias",
+      "contacts": "Contatos",
+      "dating": "Relacion."
+    },
+    "social": {
+      "title": "HoopsNet",
+      "feed": "Feed",
+      "noTweets": "Seu feed está vazio. Jogue uma partida para ver o que as pessoas estão dizendo!",
+      "loading": "Carregando novos tweets..."
+    },
+    "contacts": {
+      "title": "Contatos",
+      "noContacts": "Nenhum contato ainda."
+    },
+    "dating": {
+      "title": "HypeCourt",
+      "comingSoon": "Em Breve"
+    }
+  },
+  "playoffs": {
+    "title": "Playoffs da NBA",
+    "nbaChampion": "CAMPEÃO DA NBA",
+    "showBracket": "Mostrar Chave",
+    "hideBracket": "Esconder Chave",
+    "liveScoreToggle": "Placar ao Vivo",
+    "eventsToggle": "Eventos Narrativos",
+    "loadingOpponent": "Carregando próximo adversário...",
+    "champion": "🏆 CAMPEÃO DA NBA! 🏆",
+    "wonChampionship": "Você venceu o Campeonato da NBA!",
+    "seriesWon": "Série vencida! Avançando...",
+    "eliminated": "Eliminado dos Playoffs.",
+    "enterOffSeason": "Entrar na Off-Season",
+    "nextRound": "Próxima Rodada",
+    "simulating": "Simulando...",
+    "playGame": "Jogar Jogo {{gameNum}}",
+    "challenge": "O {{teamName}} está em seu caminho. É hora de escolher seu plano de jogo.",
+    "waitingForOpponent": "Aguardando adversário...",
+    "seriesComplete": "A série deles ainda está sendo decidida.",
+    "simulationSpeed": "Velocidade da Simulação",
+    "scouting": {
+      "title": "Relatório do Olheiro",
+      "dominant_big": "Este time joga através de uma presença dominante no garrafão. São fortes por dentro, mas podem ser lentos para defender o perímetro.",
+      "offensive_juggernaut": "Uma potência ofensiva com múltiplas ameaças de pontuação. Eles jogam rápido e podem marcar muitos pontos rapidamente.",
+      "defensive_lockdown": "Um time aguerrido e focado na defesa que fará você lutar por cada ponto. Eles se destacam em jogos de baixa pontuação.",
+      "pace_and_space": "Este time adora correr e arremessar de três. Eles espaçam a quadra com arremessadores e atacam implacavelmente na transição."
+    },
+    "strategyResult": {
+      "title": "Resultado da Estratégia",
+      "strategy": "Estratégia",
+      "successChance": "Chance de Sucesso",
+      "outcome": "Resultado",
+      "success": "SUCESSO",
+      "failure": "FALHA",
+      "dismiss": "Fechar",
+      "onSuccess": "Em Sucesso",
+      "onFailure": "Em Falha"
+    }
+  },
+  "playoffRounds": {
+    "first": "Primeira Rodada",
+    "semis": "Semifinais de Conferência",
+    "finals": "Finais de Conferência",
+    "nbaFinals": "Finais da NBA"
+  },
+  "playoffChoice": {
+    "title": "Plano de Jogo",
+    "subtitle": "Como você vai abordar este jogo crucial dos playoffs?",
+    "keyStats": "Atributos Chave",
+    "risk": {
+      "low": "Baixo Risco",
+      "medium": "Risco Médio",
+      "high": "Alto Risco"
+    }
+  },
+  "strategyEffects": {
+    "playerPoints": "Sua Pontuação",
+    "playerRebounds": "Seus Rebotes",
+    "playerAssists": "Sua Criação",
+    "teamOffense": "Ataque do Time",
+    "teamDefense": "Defesa do Time",
+    "opponentOffense": "Ataque Adversário",
+    "opponentDefense": "Defesa Adversária",
+    "none": "Sem efeito principal"
+  },
+  "playoffStrategies": {
+    "categories": {
+      "offensive": "Ofensivo",
+      "defensive": "Defensivo",
+      "team": "Equipe"
+    },
+    "iso_hero_ball": { "name": "Hero Ball", "description": "Isole seu adversário e domine a pontuação. Alto risco, alta recompensa." },
+    "three_point_barrage": { "name": "Chuva de 3 Pontos", "description": "Procure arremessos livres de três. Viver ou morrer pela bola de três." },
+    "fastbreak_frenzy": { "name": "Frenesi de Contra-Ataque", "description": "Acelere o ritmo implacavelmente. Busque pontuar em transição antes que a defesa se organize." },
+    "pick_and_roll_mastery": { "name": "Maestria no Pick & Roll", "description": "Execute o pick and roll para criar arremessos para você ou seus companheiros." },
+    "attack_the_paint": { "name": "Atacar o Garrafão", "description": "Seja agressivo e infiltre no garrafão, tentando cavar faltas ou pontuar perto da cesta." },
+    "mid_range_clinic": { "name": "Clínica de Meia Distância", "description": "Explore a defesa focando em arremessos de meia distância de alta porcentagem." },
+    "patient_offense": { "name": "Ataque Paciente", "description": "Movimente a bola e espere pelo melhor arremesso possível." },
+    "post_up_bully": { "name": "Jogo de Costas (Bully)", "description": "Use seu tamanho e força para empurrar os defensores no post para cestas fáceis." },
+    "unleash_creative_playmaking": { "name": "Liberar Criatividade", "description": "Improvise e faça jogadas plásticas para pegar a defesa de surpresa." },
+    "full_court_press": { "name": "Pressão Quadra Inteira", "description": "Aplique pressão em toda a quadra para forçar turnovers." },
+    "pack_the_paint": { "name": "Fechar o Garrafão", "description": "Feche a defesa para impedir pontos internos, mas arrisque deixar arremessadores livres." },
+    "run_shooters_off_line": { "name": "Marcar Arremessadores", "description": "Feche agressivamente nos jogadores de perímetro para impedir arremessos de 3 pontos." },
+    "force_tough_midrange": { "name": "Forçar Meia Distância", "description": "Um esquema conservador para evitar bandejas e arremessos de três livres." },
+    "lock_down_star_player": { "name": "Marcar a Estrela", "description": "Foque seu melhor defensor em parar a principal ameaça adversária." },
+    "switch_everything": { "name": "Trocar Tudo na Defesa", "description": "Troque em todos os corta-luzes para atrapalhar o ataque, mas arrisque criar desvantagens (mismatches)." },
+    "trap_the_ball_handler": { "name": "Dobrar no Driblador", "description": "Mande uma dobra de marcação no principal armador para forçar um erro." },
+    "physical_defense": { "name": "Defesa Física", "description": "Use sua força para atrapalhar, mas arrisque cometer muitas faltas." },
+    "secure_defensive_rebounds": { "name": "Garantir Rebote Defensivo", "description": "Priorize finalizar a posse defensiva fazendo o box out e pegando rebotes." },
+    "enforce_the_paint": { "name": "Impor no Garrafão", "description": "Estabeleça uma presença física interna, desencorajando infiltrações e contestando arremessos." },
+    "slow_the_pace": { "name": "Diminuir o Ritmo", "description": "Desacelere o jogo, limitando as posses de bola para ambos os times." },
+    "push_the_pace": { "name": "Acelerar o Ritmo", "description": "Acelere o jogo, criando mais posses e um ambiente caótico." },
+    "veteran_leadership": { "name": "Liderança Veterana", "description": "Confie nos jogadores experientes para tomar decisões inteligentes e acalmar o time." },
+    "small_ball_lineup": { "name": "Usar Small Ball", "description": "Jogue com uma formação mais baixa e rápida para enfatizar velocidade e arremesso." },
+    "big_ball_lineup": { "name": "Usar Formação Alta", "description": "Jogue com uma formação mais alta e forte para dominar o garrafão e os rebotes." },
+    "focus_on_ball_movement": { "name": "Focar no Movimento de Bola", "description": "Enfatize o passe e o trabalho em equipe para gerar arremessos livres para todos." },
+    "crash_offensive_glass": { "name": "Atacar o Rebote Ofensivo", "description": "Mande jogadores para pegar rebotes ofensivos para pontos de segunda chance." },
+    "coachs_pep_talk": { "name": "Discurso do Treinador", "description": "Um pedido de tempo bem calculado para reagrupar e motivar o time." },
+    "fan_favorite_play": { "name": "Jogada para a Torcida", "description": "Tente uma jogada espetacular para energizar o time e a torcida da casa." },
+    "trash_talk_opponent": { "name": "Provocar", "description": "Entre na mente do adversário para tentar tirá-lo do jogo." },
+    "study_film_and_exploit": { "name": "Estudar e Explorar", "description": "Use sua preparação para atacar uma fraqueza específica no esquema do adversário." },
+    "rally_the_team": { "name": "Motivar o Time", "description": "Assuma um papel de liderança, direcionando os companheiros e elevando o moral." }
+  },
+  "awardsCeremony": {
+    "title": "Cerimônia de Premiação da Temporada",
+    "subtitle": "Seu incrível desempenho nesta temporada foi reconhecido pela liga.",
+    "continueButton": "Continuar para a Pós-Temporada",
+    "noAwardsTitle": "Temporada Regular Encerrada",
+    "noAwardsSubtitle": "A temporada de 82 jogos terminou. É hora da pós-temporada.",
+    "noAwardsBody": "Você não ganhou nenhum prêmio individual importante nesta temporada. Hora de provar que estavam errados nos playoffs!"
+  },
+  "coachReport": {
+    "title": "Relatório de Fim de Temporada",
+    "subtitle": "Uma palavra do treinador...",
+    "loading": "O treinador está analizando sua temporada...",
+    "proceedButton": "Prosseguir para o Treino de Férias"
+  },
+  "offSeasonTraining": {
+    "title": "Treino de Férias (Off-Season)",
+    "subtitle": "Hora de ir para a academia com base no feedback do seu treinador.",
+    "coachFocus": "Foco do Treinador",
+    "trainButton": "Começar a Treinar",
+    "trainingInProgress": "Treino em andamento...",
+    "resultsTitle": "Resultados do Treino",
+    "statImproved": "{{attribute}} melhorou em +{{points}}!",
+    "noImprovement": "Sessão difícil. Sem melhorias significativas desta vez.",
+    "proceedButton": "Prosseguir para a Free Agency"
+  },
+  "freeAgency": {
+    "title": "Off-Season: Free Agency",
+    "subtitle": "Seu contrato acabou. Onde você vai assinar para a Temporada {{season}}?",
+    "currentTeam": "(Time Atual)",
+    "newOffer": "Nova Proposta",
+    "signing": "Assinando com o {{teamName}}..."
+  },
+  "retirementPrompt": {
+    "title": "Uma Grande Decisão",
+    "description": "Você acabou de completar sua {{season}}ª temporada na NBA. Você tem a opção de se aposentar agora e solidificar seu legado, ou voltar por mais um ano para buscar a glória. Qual a sua decisão?",
+    "retireButton": "Pendurar os Tênis",
+    "continueButton": "Mais Uma Temporada"
+  },
+  "retirement": {
+    "title": "Uma Carreira Lendária",
+    "seasonsInNBA": "{{count}} Temporadas na NBA",
+    "careerTotals": "Totais da Carreira",
+    "championships": "Títulos",
+    "trophyCase": "Sala de Troféus",
+    "noAwards": "Nenhum prêmio individual importante conquistado.",
+    "legacy": "Legado",
+    "solidCareer": "Uma carreira sólida para a história.",
+    "newCareerButton": "Começar Nova Carreira"
+  },
+  "standings": {
+    "title": "Classificação da Liga",
+    "east": "Conferência Leste",
+    "west": "Conferência Oeste",
+    "team": "Time",
+    "wins": "V",
+    "losses": "D",
+    "winPct": "%VIT"
+  },
+  "trophyGallery": {
+    "title": "Galeria de Troféus",
+    "backButton": "Voltar ao Painel",
+    "championships": "Títulos da NBA ({{count}})",
+    "noChampionships": "Nenhum título conquistado... ainda.",
+    "individualAwards": "Prêmios Individuais",
+    "season": "Temporada",
+    "fmvpName": "MVP das Finais"
+  },
+  "trophies": {
+    "mvp": { "name": "MVP", "description": "Jogador Mais Valioso da Temporada" },
+    "fmvp": { "name": "MVP das Finais", "description": "Jogador Mais Valioso das Finais" },
+    "scoring-champ": { "name": "Cestinha da Liga", "description": "Liderou a liga em pontos" },
+    "all-star": { "name": "All-Star", "description": "Selecionado para o Jogo das Estrelas" },
+    "all-nba": { "name": "Time da NBA", "description": "Selecionado para um dos Times da NBA" },
+    "rookie-year": { "name": "Calouro do Ano", "description": "Votado melhor calouro da temporada" },
+    "dpoy": { "name": "Defensor do Ano", "description": "Votado melhor defensor da temporada" },
+    "sixth-man": { "name": "Sexto Homem do Ano", "description": "Votado melhor reserva da temporada" },
+    "most-improved": { "name": "Jogador que Mais Evoluiu", "description": "Mostrou o maior progresso da temporada anterior" }
+  },
+  "achievements": {
+    "title": "Conquistas",
+    "first-game": { "name": "Estreia na NBA", "description": "Jogou sua primeira partida na NBA" },
+    "first-points": { "name": "Primeiros Pontos", "description": "Marcou seus primeiros pontos na NBA" },
+    "double-double": { "name": "Double-Double", "description": "Alcançou um double-double em um jogo" },
+    "30-points": { "name": "Jogo de 30 Pontos", "description": "Marcou 30 pontos em um jogo" },
+    "drafted": { "name": "Draftado!", "description": "Selecionado no draft da NBA" },
+    "lottery-pick": { "name": "Escolha de Loteria!", "description": "Selecionado entre as 14 primeiras escolhas do draft" },
+    "playoff-berth": { "name": "Nos Playoffs", "description": "Seu time se classificou para os playoffs" },
+    "playoff-win": { "name": "Vitória nos Playoffs", "description": "Venceu seu primeiro jogo de playoffs" },
+    "series-win": { "name": "Venceu uma Série", "description": "Venceu uma série de playoffs" },
+    "conference-finals": { "name": "Finais de Conferência", "description": "Chegou às finais de conferência" },
+    "nba-finals": { "name": "Finais da NBA", "description": "Chegou às Finais da NBA" },
+    "champion": { "name": "Campeão da NBA", "description": "Venceu o campeonato da NBA" },
+    "triple-double": { "name": "Triple-Double", "description": "Alcançou um triple-double em um jogo" },
+    "50-point-game": { "name": "Jogo de 50 Pontos", "description": "Marcou 50 ou mais pontos em um jogo" },
+    "jersey-retired": { "name": "Camisa Aposentada", "description": "Teve sua camisa aposentada por um time" },
+    "hall-of-fame": { "name": "Hall da Fama", "description": "Introduzido no Hall da Fama do Basquete" },
+    "legend": { "name": "Lenda do Jogo", "description": "Jogou por mais de 15 temporadas na NBA" }
+  }
+}
