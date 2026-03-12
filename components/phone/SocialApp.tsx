@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Player, Tweet, SocialNotification, Message, DatingProfile, Contact } from '../../types';
 import { useTranslations } from '../../hooks/useTranslations';
-import { analyzePlayerTweet, generateSocialMediaFeed, generateTweetComments, generateCelebrityTweetResponse } from '../../services/puterService';
+import { analyzePlayerTweet, generateSocialMediaFeed, generateTweetComments, generateCelebrityTweetResponse } from '../../services/geminiService';
 import { DATING_PROFILES } from '../../constants';
 import ComposeTweetModal from './ComposeTweetModal';
 import TweetCard from './TweetCard';
@@ -156,7 +156,7 @@ const SocialApp: React.FC<SocialAppProps> = ({ player, setPlayer }) => {
         } else {
             // Original Tweet
             const allCelebrityNames = DATING_PROFILES.map(p => p.name);
-            const analysisPromise = analyzePlayerTweet(tweetText, player, language);
+            const analysisPromise = analyzePlayerTweet(player, tweetText, allCelebrityNames);
             const interactionsPromise = generateInteractions(tweetText);
 
             let celebResponse: Awaited<ReturnType<typeof generateCelebrityTweetResponse>> = null;
@@ -164,22 +164,11 @@ const SocialApp: React.FC<SocialAppProps> = ({ player, setPlayer }) => {
             
             const [analysis, interactions] = await Promise.all([analysisPromise, interactionsPromise]);
 
-            if (analysis.effects?.celebrityMention) {
+            if (analysis.effects.celebrityMention) {
                 const mentionedCelebrityName = analysis.effects.celebrityMention;
                 mentionedCelebrityProfile = DATING_PROFILES.find(p => p.name.toLowerCase() === mentionedCelebrityName.toLowerCase()) || null;
                 if (mentionedCelebrityProfile) {
-                    const tempNewTweet: Tweet = {
-                        id: `tweet-${Date.now()}`,
-                        author: player.name,
-                        handle: playerHandle,
-                        avatar: player.phone.socialProfile.avatarUrl,
-                        content: tweetText,
-                        likes: 0,
-                        retweets: 0,
-                        isVerified: true,
-                        comments: [],
-                    };
-                    celebResponse = await generateCelebrityTweetResponse(tempNewTweet, player, language);
+                    celebResponse = await generateCelebrityTweetResponse(player, tweetText, mentionedCelebrityProfile, language);
                 }
             }
 
@@ -201,12 +190,13 @@ const SocialApp: React.FC<SocialAppProps> = ({ player, setPlayer }) => {
                 let updatedContacts = [...p.phone.contacts];
 
                 if (celebResponse && mentionedCelebrityProfile) {
+                    const celebData = celebResponse as any;
                     const celebTweet: Tweet = {
                         id: `comment-${Date.now()}`,
                         author: mentionedCelebrityProfile.name,
                         handle: `@${mentionedCelebrityProfile.name.toLowerCase().replace(/\s/g, '')}`,
                         avatar: mentionedCelebrityProfile.avatar,
-                        content: celebResponse.content,
+                        content: celebData.tweet.content,
                         likes: Math.floor(Math.random() * 5000) + 1000,
                         retweets: Math.floor(Math.random() * 500) + 100,
                         isVerified: true,
@@ -214,7 +204,7 @@ const SocialApp: React.FC<SocialAppProps> = ({ player, setPlayer }) => {
                     };
                     newTweet.comments.unshift(celebTweet);
 
-                    // Removed specialAction and firstMessage logic as it's no longer part of the Tweet type.
+                    if (celebData.specialAction === 'addContact' && celebData.firstMessage) {
                         const contactExists = p.phone.contacts.some(c => c.id === mentionedCelebrityProfile.id);
                         if (!contactExists) {
                             const newContact: Contact = {
@@ -227,26 +217,27 @@ const SocialApp: React.FC<SocialAppProps> = ({ player, setPlayer }) => {
                                     {
                                         id: `msg-celeb-${Date.now()}`,
                                         sender: mentionedCelebrityProfile.name,
-                                        text: "(Auto-generated first message)",
+                                        text: celebResponse.firstMessage,
                                         timestamp: Date.now()
                                     }
                                 ]
                             };
                             updatedContacts.push(newContact);
                         }
+                    }
                 }
 
                 const newFeed = [newTweet, ...p.phone.socialFeed].slice(0, 50);
                 const newRelationships = { ...p.relationships };
-                if (analysis.effects?.relationships) {
-                    analysis.effects?.relationships?.forEach(rel => {
+                if (analysis.effects.relationships) {
+                    analysis.effects.relationships.forEach(rel => {
                         newRelationships[rel.person] = (newRelationships[rel.person] || 0) + rel.change;
                     });
                 }
                 
                 return {
                     ...p,
-                    teamChemistry: Math.max(0, Math.min(100, p.teamChemistry + (analysis.effects?.teamChemistry || 0))),
+                    teamChemistry: Math.max(0, Math.min(100, p.teamChemistry + (analysis.effects.teamChemistry || 0))),
                     relationships: newRelationships,
                     phone: {
                         ...p.phone,

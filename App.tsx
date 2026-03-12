@@ -26,7 +26,6 @@ import EventLoadingIndicator from './components/EventLoadingIndicator';
 import AwardsCeremony from './components/AwardsCeremony';
 import LeagueStandings from './components/LeagueStandings';
 import EventOutcomeModal from './components/EventOutcomeModal';
-import SettingsModal from './components/ApiKeyModal';
 import { generateGameSummary, generateCoachFeedback, generateGameEvent, generateNewsHeadlines, generateSocialMediaFeed, generateInitialSocialMediaFeed } from './services/geminiService';
 import { generateSeasonSchedule } from './services/scheduleService';
 import { useTranslations } from './hooks/useTranslations';
@@ -136,7 +135,6 @@ const App: React.FC = () => {
     const [fullSchedule, setFullSchedule] = useState<{ [teamCode: string]: string[] } | null>(null);
     const [teamStrengths, setTeamStrengths] = useState<{ [key: string]: number } | null>(null);
     const [previousSeasonStandings, setPreviousSeasonStandings] = useState<LeagueStandingsType | null>(null);
-    const [showSettingsModal, setShowSettingsModal] = useState(false);
     const [isAuthLoading, setIsAuthLoading] = useState(true);
     const [allPlayers, setAllPlayers] = useState<{ [key: string]: Player }>({});
         const [socketId, setSocketId] = useState<string | null>(null);
@@ -884,7 +882,7 @@ const App: React.FC = () => {
         
         switch (screen) {
             case Screen.CREATE_PLAYER:
-                return <CreatePlayer onPlayerCreate={handlePlayerCreate} onOpenSettingsModal={() => setShowSettingsModal(true)} onBack={() => setScreen(Screen.USER_DASHBOARD)} />;
+                return <CreatePlayer onPlayerCreate={handlePlayerCreate} onBack={() => setScreen(Screen.USER_DASHBOARD)} />;
             case Screen.PRE_DRAFT:
                 return <PreDraftScreen player={player!} onPreDraftComplete={handlePreDraftComplete} />;
             case Screen.DRAFT:
@@ -957,7 +955,6 @@ const App: React.FC = () => {
                 ))}
             </div>
             
-            {showSettingsModal && <SettingsModal onClose={() => setShowSettingsModal(false)} />}
             {showRetirementPrompt && player && <RetirementChoiceModal season={player.currentSeason} onDecision={handleRetirementDecision} />}
             {isEventLoading && <EventLoadingIndicator />}
             {player?.currentEvent && <EventModal event={player.currentEvent} onDecision={handleEventDecision} />}

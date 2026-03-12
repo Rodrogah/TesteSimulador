@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { GameState, Player, League, ChatMessage } from '../types';
+import { GameState, Player, League, ChatMessage } from '../multiplayerTypes';
 import { webSocketService } from '../services/WebSocketService';
 
 interface GameContextType {

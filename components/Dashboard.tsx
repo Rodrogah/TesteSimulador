@@ -18,7 +18,6 @@ interface DashboardProps {
     isNewsLoading: boolean;
     eventsEnabled: boolean;
     onToggleEvents: (enabled: boolean) => void;
-    onOpenSettingsModal: () => void;
     onFinishSeason: () => void;
     generateGameStats: (currentPlayer: Player, currentMomentum: number, isClutchSituation: boolean) => { points: number; rebounds: number; assists: number };
     onBackToCareers: () => void;
@@ -244,7 +243,7 @@ const StandingsWidget: React.FC<{
 };
 
 
-const Dashboard: React.FC<DashboardProps> = ({ player, setPlayer, leagueStandings, teamStrengths, onGamePlayed, onSimulateGames, onNavigate, onEventDecision, isEventLoading, isNewsLoading, eventsEnabled, onToggleEvents, onOpenSettingsModal, onFinishSeason, generateGameStats, onBackToCareers }) => {
+const Dashboard: React.FC<DashboardProps> = ({ player, setPlayer, leagueStandings, teamStrengths, onGamePlayed, onSimulateGames, onNavigate, onEventDecision, isEventLoading, isNewsLoading, eventsEnabled, onToggleEvents, onFinishSeason, generateGameStats, onBackToCareers }) => {
     const { t } = useTranslations();
     const [latestGameId, setLatestGameId] = useState<number | null>(null);
     const [isSimulating, setIsSimulating] = useState(false);
@@ -320,12 +319,6 @@ const Dashboard: React.FC<DashboardProps> = ({ player, setPlayer, leagueStanding
                         <p className="font-bold text-lg truncate">{player.name}</p>
                         <p className="text-sm text-secondary">{t(`positions.${player.position}`) as string}</p>
                     </div>
-                    <button onClick={onOpenSettingsModal} title="Settings" className="text-gray-400 hover:text-white transition-colors bg-surface p-2 rounded-lg border border-white/10 h-16 w-16 flex items-center justify-center shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </button>
                 </div>
             </header>
 

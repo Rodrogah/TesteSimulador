@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Player, Tweet, SocialNotification } from '../../types';
 import TweetCard from './TweetCard';
 import { useTranslations } from '../../hooks/useTranslations';
-import { generateSocialMediaReactionToPlayerComment, generateTweetComments } from '../../services/puterService';
+import { generateSocialMediaReactionToPlayerComment, generateTweetComments } from '../../services/geminiService';
 import { findAndModifyTweet } from './utils';
 
 interface TweetDetailViewProps {
@@ -85,11 +85,13 @@ const TweetDetailView: React.FC<TweetDetailViewProps> = ({ player, setPlayer, tw
 
         const reaction = await generateSocialMediaReactionToPlayerComment(currentTweetState, playerComment, player, language);
 
-        if (reaction) {
+        if (reaction && reaction.tweet) {
             const cleanHandle = (handle: string) => `@${handle.replace(/@/g, '')}`;
-            const baseAiTweet = {
+            const baseAiTweet: Tweet = {
                 id: `tweet-${Date.now()}-${Math.random()}`,
-                ...reaction.tweet,
+                author: reaction.tweet.author,
+                content: reaction.tweet.content,
+                isVerified: reaction.tweet.isVerified,
                 handle: cleanHandle(reaction.tweet.handle),
                 avatar: `https://i.pravatar.cc/48?u=${reaction.tweet.handle}`,
                 likes: Math.floor(Math.random() * 100),
@@ -103,7 +105,8 @@ const TweetDetailView: React.FC<TweetDetailViewProps> = ({ player, setPlayer, tw
                 let newNotifications = p.phone.socialNotifications;
                 let finalSocialFeed = p.phone.socialFeed;
 
-                switch (reaction.reactionType) {
+                const reactionType = reaction.reactionType as string;
+                switch (reactionType) {
                     case 'reply': {
                         const { modifiedTweets } = findAndModifyTweet(
                             p.phone.socialFeed,

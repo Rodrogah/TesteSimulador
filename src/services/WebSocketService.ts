@@ -1,4 +1,4 @@
-import { GameState } from '../types';
+import { GameState } from '../multiplayerTypes';
 
 type MessageType = 'GAME_STATE_UPDATE' | 'NEW_CHAT_MESSAGE' | 'CLIENT_ID_ASSIGNED' | 'ERROR';
 
